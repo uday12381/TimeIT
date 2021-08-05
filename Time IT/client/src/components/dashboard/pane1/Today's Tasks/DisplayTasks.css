@@ -1,0 +1,12 @@
+.card-header {
+    transform: translateX(-37%);
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.list-group-item {
+    background-color: grey;
+    margin: 5px;
+    border-radius: 5px;
+}

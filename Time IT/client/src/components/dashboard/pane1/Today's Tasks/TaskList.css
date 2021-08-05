@@ -1,0 +1,86 @@
+.taskList {
+    display: flex;
+    width: 25%;
+    height: 800px;
+    margin-top: 50px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin-right: 50px;
+    min-width: 25vw;
+    background: url('./backgroundimage.jpeg') no-repeat center center/cover;
+    overflow-y: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+.card-header {
+    text-align:right;
+    margin:0px;
+}
+#tasks-list {
+    height: 39%;
+    color: white;
+    text-align: center;
+    overflow-y: auto;
+    /* padding: 10px; */
+}
+
+#daily {
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    padding: 12px;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 61%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 100%;
+}
+
+#form-icon {
+    position: absolute;
+    top: -20%;
+    font-size: 3.5rem;
+    width: 8px;
+    height: 8px;
+    font-weight: bold;
+    border-radius: 50%;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    text-align: center;
+}
+
+#form-icon p {
+    transform: translateY(-16px);
+}
+
+.form-active {
+    transform: translateY(-100%);
+    transition: transform 1s ease-in;
+}
+
+.form-active #form-icon {
+    transform-origin: center center;
+
+    transform: rotate(45deg);
+    transition: 1s ease-in;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#select-box {
+    color: #60666d;
+    display: block;
+    padding: 2px;
+}

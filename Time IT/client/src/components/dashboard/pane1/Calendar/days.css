@@ -1,0 +1,16 @@
+.day {
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    min-height:100vh;
+    border-right: 2px solid grey;
+    position: relative;
+    background-color:#e9edda;
+
+}
+
+.task:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    z-index: 1;
+}

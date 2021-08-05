@@ -1,0 +1,21 @@
+.timeline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200vh;
+    padding-bottom: 10px;
+}
+#testing {
+    height:800px;
+    width:70%;
+    overflow-y: auto;
+    margin-top:50px;
+}
+.tasks-and-hours {
+    height: 100%;
+    width: fill;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,14 @@
+.labels {
+    width: 5%;
+    border-right: 1px solid grey;
+}
+
+.label {
+    height: 4.16666667%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    overflow-x: hidden;
+    background-color:#e9edda;
+
+}

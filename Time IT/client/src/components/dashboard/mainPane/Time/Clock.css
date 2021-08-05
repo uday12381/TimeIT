@@ -1,0 +1,100 @@
+:root {
+    --primary-color1:#000;
+    --secondary-color: #fff;
+    --seconds-color: #e65144;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 70%;
+    min-height: 320px;
+    min-width: 300px;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.needle {
+    background-color: var(--primary-color1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+}
+
+.needle.hour {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+}
+
+.needle.second {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: var(--seconds-color);
+}
+
+.center-point {
+    background-color: var(--seconds-color);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.center-point::after {
+    content: '';
+    background-color: var(--primary-color1);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+}
+
+.time {
+    color:var(--secondary-color);
+    font-size: 50px;
+    font-weight: bold;;
+}
+
+.date {
+    color:var(--secondary-color);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.date .circle {
+    background-color: var(--primary-color1);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+    font-size: 12px;
+}
